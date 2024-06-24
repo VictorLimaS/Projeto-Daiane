@@ -9,15 +9,17 @@
         <h3>@daianepereirapmu</h3>
       </div>
       <div class="label">
-        <Input text="WHATSAPP" />
-        <Input text="INSTAGRAM" />
-        <Input text="TIKTOK" />
+        <Input text="WHATSAPP" :url="'https://api.whatsapp.com/send?phone=5513991580976'" />
+        <Input text="INSTAGRAM" :url="'https://www.instagram.com/daianepereirapmu/'" />
+        <Input text="FACEBOOK" :url="'https://www.facebook.com/dannepereiraa'" />
       </div>
       <div class="social">
-        <i class="bi bi-instagram icon" @mouseover="hoverEffect('instagram')" @mouseleave="resetColor('instagram')"></i>
-        <i class="bi bi-whatsapp icon" @mouseover="hoverEffect('whatsapp')" @mouseleave="resetColor('whatsapp')"></i>
-        <i class="bi bi-facebook icon" @mouseover="hoverEffect('facebook')" @mouseleave="resetColor('facebook')"></i>
-        <i class="bi bi-tiktok icon" @mouseover="hoverEffect('tiktok')" @mouseleave="resetColor('tiktok')"></i>
+        <i class="bi bi-instagram icon" @click="redirectTo('https://www.instagram.com/daianepereirapmu/')"
+           @mouseover="hoverEffect('instagram')" @mouseleave="resetColor('instagram')"></i>
+        <i class="bi bi-whatsapp icon" @click="redirectTo('https://api.whatsapp.com/send?phone=5513991580976')"
+           @mouseover="hoverEffect('whatsapp')" @mouseleave="resetColor('whatsapp')"></i>
+        <i class="bi bi-facebook icon" @click="redirectTo('https://www.facebook.com/dannepereiraa')"
+           @mouseover="hoverEffect('facebook')" @mouseleave="resetColor('facebook')"></i>
       </div>
     </div>
   </div>
@@ -38,9 +40,6 @@ const hoverEffect = (platform) => {
     case 'facebook':
       document.querySelector('.bi-facebook').style.color = '#1877f2';
       break;
-    case 'tiktok':
-      document.querySelector('.bi-tiktok').style.color = 'BLACK';
-      break;
     default:
       break;
   }
@@ -57,12 +56,13 @@ const resetColor = (platform) => {
     case 'facebook':
       document.querySelector('.bi-facebook').style.color = 'white';
       break;
-    case 'tiktok':
-      document.querySelector('.bi-tiktok').style.color = 'white';
-      break;
     default:
       break;
   }
+};
+
+const redirectTo = (url) => {
+  window.open(url, '_blank');
 };
 </script>
 

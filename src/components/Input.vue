@@ -1,5 +1,5 @@
 <template>
-  <div class="custom-label">
+  <div class="custom-label" @click="redirectTo">
     <span>{{ text }}</span>
     <i class="bi bi-send"></i>
   </div>
@@ -13,6 +13,15 @@ export default {
     text: {
       type: String,
       required: true
+    },
+    url: {
+      type: String,
+      required: true
+    }
+  },
+  methods: {
+    redirectTo() {
+      window.open(this.url, '_blank');
     }
   }
 };
@@ -25,18 +34,18 @@ export default {
   border: 2px solid white;
   border-radius: 50px;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   color: white;
-  padding: .4rem 1rem; 
+  padding: 0.4rem 1rem;
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
 }
 
 .custom-label span {
-  flex: 1; 
-  text-align: center; 
+  flex: 1;
+  text-align: center;
 }
 
 .custom-label i {
