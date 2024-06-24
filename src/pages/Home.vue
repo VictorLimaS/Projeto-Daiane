@@ -196,4 +196,14 @@ h3 {
     padding: 0 .3rem;
   }
 }
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}
 </style>

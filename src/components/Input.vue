@@ -57,4 +57,10 @@ export default {
     padding: 1rem 1rem;
   }
 }
+
+@media (max-width: 500px) {
+.custom-label {
+  font-size: 1.5rem;
+}
+}
 </style>
