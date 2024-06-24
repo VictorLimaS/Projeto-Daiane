@@ -163,8 +163,37 @@ h3 {
   }
 
   .social {
-  font-size: 3rem;
-  margin-top: 2.5rem;
+    font-size: 3rem;
+    margin-top: 2.5rem;
+  }
 }
+
+@media (max-width: 700px) {
+  .img {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 3rem;
+  }
+
+  .name {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 3.1rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .social {
+    font-size: 2rem;
+    margin-top: 2.2rem;
+  }
+
+  .label {
+    padding: 0 .3rem;
+  }
 }
 </style>

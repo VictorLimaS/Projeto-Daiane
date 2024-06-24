@@ -1,15 +1,10 @@
 <template>
-  <img :src="imagemSrc" alt="Imagem">
+  <img src="../assets/img/perfil.png" alt="Imagem">
 </template>
 
 <script>
 export default {
   name: 'Img',
-  data() {
-    return {
-      imagemSrc: 'src/assets/img/perfil.png',
-    };
-  }
 };
 </script>
 
