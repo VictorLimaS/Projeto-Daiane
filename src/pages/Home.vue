@@ -69,10 +69,12 @@ const redirectTo = (url) => {
 <style scoped>
 .home {
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   padding: 2rem;
   gap: 2rem;
+  margin-top: 3rem;
 }
 
 .content {
@@ -92,8 +94,8 @@ const redirectTo = (url) => {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1rem;
   color: white;
+  margin-bottom: 2rem
 }
 
 h1 {
@@ -137,6 +139,7 @@ h3 {
     display: inline;
     justify-content: center;
     align-items: center;
+    padding: 0 1rem
   }
 
   .img {
@@ -144,6 +147,10 @@ h3 {
     height: 20rem;
     border-radius: 50%;
     overflow: hidden;
+  }
+
+  .name {
+  margin-bottom: 0rem
   }
 
   .content {
@@ -158,13 +165,9 @@ h3 {
     padding: 0 2rem;
   }
 
-  .name {
-    margin-bottom: 5rem;
-  }
-
   .social {
     font-size: 3rem;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
   }
 }
 
@@ -172,7 +175,6 @@ h3 {
   .img {
     width: 10rem;
     height: 10rem;
-    margin-bottom: 3rem;
   }
 
   .name {
@@ -189,7 +191,6 @@ h3 {
 
   .social {
     font-size: 2rem;
-    margin-top: 2.2rem;
   }
 
   .label {
