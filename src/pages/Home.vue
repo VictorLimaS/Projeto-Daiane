@@ -115,6 +115,7 @@ h3 {
   width: 100%;
   gap: 2.3rem;
   padding: 0 5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
 
 .social {
