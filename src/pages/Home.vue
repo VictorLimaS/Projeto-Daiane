@@ -143,8 +143,8 @@ h3 {
   }
 
   .img {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     border-radius: 50%;
     overflow: hidden;
   }

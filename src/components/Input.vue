@@ -60,7 +60,8 @@ export default {
 
 @media (max-width: 500px) {
 .custom-label {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  padding: 0.2rem 1rem;
 }
 }
 </style>
