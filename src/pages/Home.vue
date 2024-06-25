@@ -134,6 +134,22 @@ h3 {
   transform: scale(1.1);
 }
 
+@media (max-width: 1330px) {
+  h1 {
+  font-size: 5.2rem;
+}
+}
+
+@media (max-width: 1120px) {
+  h1 {
+  font-size: 4.3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+}
+
 @media (max-width: 950px) {
   .home {
     display: inline;
